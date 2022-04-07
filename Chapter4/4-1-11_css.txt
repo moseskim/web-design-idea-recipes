@@ -1,0 +1,29 @@
+.wrap {
+   display: flex; /*‰¡•À‚Ñ*/
+   justify-content: space-between; /*¶‰E—¼’[‘µ‚¦*/
+}
+
+.item {
+   display: flex;
+   flex-direction: column; /*FlexƒAƒCƒeƒ€‚ğc•À‚Ñ‚É‚·‚é*/
+   padding: 20px;
+   width: 48%;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+}
+
+p {
+   flex-grow: 1; /*.item‚Ìc•‚É‡‚í‚¹‚ÄLk‚³‚ê‚é*/
+   margin-bottom: 20px;
+}
+
+a {
+   display: block;
+   padding: 20px 0;
+   color: #111;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   background-color: #7fb2a1;
+   border-radius: 10px;
+}

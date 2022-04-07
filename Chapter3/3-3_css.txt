@@ -1,0 +1,21 @@
+a {
+   display: block;
+   padding: 30px 10px;
+   width: 260px;
+   color: #333;
+   font-size: 18px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   background-color: #90be70;
+   border-image-source: /*ボーダーを画像で表現するプロパティ*/
+   repeating-linear-gradient( /*線形グラデーションで表現*/
+      45deg, /*線形グラデーションを45°回転させる*/
+      #2b550e 0px, #2b550e 4px, /*色の付いた斜線を表現*/
+      rgba(0 0 0 / 0) 4px, rgba(0 0 0 / 0) 6px /*余白（透明）を表現*/
+   );
+   border-image-slice: 3; /*border4辺の使用範囲を指定*/
+   border-width: 3px; /*ボーダーの幅*/
+   border-image-repeat: round; /*タイル状に繰り返して表示*/
+   border-style: solid; /*1本の線として表現*/
+}

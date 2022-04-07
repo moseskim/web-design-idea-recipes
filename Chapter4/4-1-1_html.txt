@@ -1,0 +1,17 @@
+<div class="wrap">
+   <div class="item">
+      <img src="picture01.jpg" alt="パソコンを前に談笑している写真">
+      <h2>横並び見出し</h2>
+      <p>横並びレイアウトをFlexboxで実装します。</p>
+   </div>
+   <div class="item">
+      <img src="picture01.jpg" alt="パソコンを前に談笑している写真">
+      <h2>横並び見出し</h2>
+      <p>横並びレイアウトをFlexboxで実装します。</p>
+   </div>
+   <div class="item">
+      <img src="picture01.jpg" alt="パソコンを前に談笑している写真">
+      <h2>横並び見出し</h2>
+      <p>横並びレイアウトをFlexboxで実装します。</p>
+   </div>
+</div>

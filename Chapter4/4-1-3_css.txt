@@ -1,0 +1,32 @@
+ul {
+   display: flex; /*横並び*/
+   justify-content: space-between; /*左右両端揃え*/
+   width: 800px;
+   list-style: none;
+}
+
+li {
+   width: 25%;
+   border-left: 1px solid #5b8f8f;
+}
+
+li:last-child {
+   border-right: 1px solid #5b8f8f;
+}
+
+li a {
+   display: flex;
+   flex-direction: column; /*Flexアイテムを縦並びにする*/
+   padding: 10px 0;
+   color: #333;
+   font-size: 18px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   line-height: 1.6;
+}
+
+li a span {
+   color: #5b8f8f;
+   font-size: 13px;
+}

@@ -1,0 +1,23 @@
+a {
+   display: block;
+   position: relative; /*疑似要素の基準*/
+   padding: 30px;
+   width: 260px;
+   color: #333;
+   font-size: 18px;
+   font-weight: 700;
+   text-decoration: none;
+   background-color: #90be70;
+   border-radius: 20px;
+}
+
+a::after { /*線を疑似要素で表現*/
+   content: '';
+   position: absolute;
+   top: 50%; /*上下中央配置*/
+   right: 0; /*右から0pxの位置に配置*/
+   transform: translateY(-50%); /*上下中央配置*/
+   width: 50px; /*線の横幅*/
+   height: 2px; /*線の縦幅*/
+   background-color: #2b550e;
+}

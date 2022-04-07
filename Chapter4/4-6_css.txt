@@ -1,0 +1,49 @@
+details {
+   margin: 0 auto 10px;
+   width: 580px;
+}
+
+summary {
+   display: flex; /*質問文とプラスアイコンを横並びとデフォルトの三角矢印をリセット*/
+   justify-content: space-between; /*左右両端に配置*/
+   align-items: center; /*上下中央配置*/
+   padding: 20px 30px; font-size: 18px;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+   cursor: pointer; /*カーソルをのせたときにpointer表示に指定*/
+}
+
+summary::-webkit-details-marker { /*Webkit系ブラウザの三角矢印をリセット*/
+   display: none;
+}
+
+summary:hover,
+details[open] summary { /*質問文のhover時と展開後の表示指定*/
+   background-color: #bbb;
+}
+
+summary::after { /*プラスアイコンを擬似要素で指定*/
+   content: '+';
+   margin-left: 30px;
+   color: #5b8f8f;
+   font-size: 21px;
+   transition: transform .5s; /*展開時のアニメーション指定*/
+}
+
+details[open] summary::after { /*プラスアイコンの展開後の指定*/
+   transform: rotate(45deg); /*45°回転*/
+}
+
+.answer {
+   padding: 20px;
+   line-height: 1.6;
+}
+
+details[open] .answer {
+   animation: fadein .5s ease; /*展開後のアニメーション指定*/
+}
+
+@keyframes fadein { /*不透明度を0→1でフェードイン表示*/
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+}

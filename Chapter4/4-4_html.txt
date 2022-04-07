@@ -1,0 +1,3 @@
+<div class="image">
+   <img src="flexbox.png" alt=”Flexboxで上下左右中央配置のコードを説明する画像”>
+</div>

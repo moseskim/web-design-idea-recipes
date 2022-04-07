@@ -1,0 +1,14 @@
+<div class="wrap">
+   <div class="item">
+      <img src="picture01.jpg" alt="横を向く女性の写真">
+      <p>Sun</p>
+   </div>
+   <div class="item">
+      <img src="picture02.jpg" alt="PCを操作する女性の写真">
+      <p>Mon</p>
+   </div>
+   <div class="item">
+      <img src="picture03.jpg" alt="資料を確認する男性の写真">
+      <p>Tue</p>
+   </div>
+</div>

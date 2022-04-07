@@ -1,0 +1,32 @@
+ol {
+   display: flex; /*横並び*/
+   justify-content: center; /*左右中央揃え*/
+   align-items: center; /*上下中央揃え*/
+   flex-wrap: wrap; /*折り返し指定*/
+   list-style: none;
+}
+
+li:not(:last-child) { /*最後のli以外に指定*/
+   margin-right: 10px;
+}
+
+li a {
+   display: block;
+   padding: 20px;
+   color: #111;
+   text-decoration: none;
+   line-height: 1;
+   background-color: #e6e6e6;
+   border: 2px solid #5b8f8f;
+   border-radius: 10px;
+}
+
+li span {
+   display: block;
+   padding: 20px;
+   color: #f2f2f2;
+   line-height: 1;
+   background-color: #5b8f8f;
+   border: 2px solid #5b8f8f;
+   border-radius: 10px;
+}

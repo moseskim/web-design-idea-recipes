@@ -1,0 +1,39 @@
+a {
+   display: flex; /*テキストとシンプル矢印を横並び*/
+   align-items: center; /*テキストとシンプル矢印を上下中央配置*/
+   position: relative; /*円の配置基準*/
+   padding: 30px 0 30px 33px;
+   color: #333;
+   font-size: 18px;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+a span {
+   position: relative; /*z-indexを効かせるために必要*/
+   padding: 10px;
+   background-color: #fff; /*背景色に合わせる*/
+   z-index: 1; /*重なり順*/
+}
+
+a::before { /*シンプル矢印を擬似要素で表現*/
+   content: '';
+   transform: rotate(45deg); /*45°回転させてシンプル矢印にする*/
+   margin-right: 10px;
+   width: 8px;
+   height: 8px;
+   border-top: 3px solid #2b550e; /*シンプル矢印の一辺*/
+   border-right: 3px solid #2b550e; /*シンプル矢印の一辺*/
+}
+
+a::after { /*円を擬似要素で表現*/
+   content: '';
+   position: absolute;
+   top: 50%; /*上下中央配置*/
+   left: 0;
+   transform: translateY(-50%); /*上下中央配置*/
+   width: 80px;
+   height: 80px;
+   border: 2px solid #90be70;
+   border-radius: 50%;
+}

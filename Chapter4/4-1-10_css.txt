@@ -1,0 +1,16 @@
+dl {
+   display: flex; /*横並び*/
+   justify-content: space-between; /*左右両端揃え*/
+}
+
+dt {
+   padding: 20px 30px;
+   width: 230px;
+   border-bottom: 2px solid #5b8f8f;
+}
+
+dd {
+   padding: 20px 30px;
+   width: calc(100% - 230px); /*dtの横幅分を差し引いてddの幅をレスポンシブ対応*/
+   border-bottom: 2px solid #bbb;
+}

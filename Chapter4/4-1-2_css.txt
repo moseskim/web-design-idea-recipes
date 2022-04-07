@@ -1,0 +1,19 @@
+.wrap {
+   display: flex; /*‰¡•À‚Ñ*/
+   flex-wrap: wrap; /*Ü‚è•Ô‚µ*/
+}
+
+.item {
+   padding: 30px;
+   width: 32%;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+}
+
+.item:not(:nth-child(3n+3)) { /*3‚Ì”{”ˆÈŠO‚Ì.item‚Éw’è*/
+   margin-right: 2%;
+}
+
+.item:nth-child(n+4) { /*4‚Â–ÚˆÈ~‚Ì.item‚Éw’è*/
+   margin-top: 30px;
+}
