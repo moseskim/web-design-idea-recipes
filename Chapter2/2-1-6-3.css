@@ -1,0 +1,34 @@
+.heading {
+   position: relative; /* 의사 요소 기준 */
+   padding-top: 65px; /* 한국어 텍스트 위쪽 여백 지정 */
+   padding-bottom: 50px; /* 한국어 텍스트 아래쪽 여백 지정 */
+   font-size: 26px;
+   text-align: center;
+}
+
+.heading span {
+   position: relative; /* z-index 지정을 위해 필요 */
+   z-index: 2; /* 영문자 텍스트의 위 계층에 배치 */
+}
+.heading::before { /* 영문자 텍스트를 의사 요소로 표현 */
+   content: attr(data-en); /* 데이터 속성 로딩 */
+   position: absolute;
+   top: 0; /* 기준 위쪽에 배치 */
+   left: 50%; /* 좌우 중앙 배치 */
+   transform: translateX(-50%); /* 좌우 중앙 배치 */
+   color: rgba(229 192 70 / .3); /* 반투명 텍스트 컬러 지정 */
+   font-size: 80px;
+   font-style: italic;
+   font-family: 'Montserrat', sans-serif;
+   z-index: 1;
+}
+.heading::after { /* 대각선을 의사 요소로 표현 */
+   content: '';
+   position: absolute;
+   bottom: 0; /* 기준 아래 배치 */
+   left: 50%; /* 좌우 중앙 배치 */
+   transform: translate(-50%) rotate(30deg); /* 좌우 중앙 배치 및 30° 회전 지정 */
+   width: 1px;
+   height: 40px;
+   background-color: #e5c046;
+}

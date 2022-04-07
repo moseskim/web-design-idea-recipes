@@ -1,0 +1,23 @@
+.heading {
+   font-size: 36px;
+}
+
+.heading span { /* 영문 텍스트 지정 */
+   display: flex;
+   align-items: center; /* 영문 텍스트와 선을 상하 중앙 배치 */
+   margin-bottom: 10px;
+   color: #e5c046;
+   font-size: 28px;
+   font-style: italic;
+   font-family: 'Montserrat', sans-serif;
+   text-transform: uppercase; /* 영문자를 대문자로 표기 */
+}
+
+.heading span::before { /* 노란색 선을 의사 요소로 표현 */
+   content: '';
+   display: inline-block;
+   margin-right: 20px;
+   width: 40px;
+   height: 1px;
+   background-color: #e5c046;
+}

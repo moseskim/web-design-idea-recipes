@@ -1,0 +1,23 @@
+.heading {
+   display: flex; /* 텍스트와 2개의 선을 옆으로 가로 배열 */
+   justify-content: center; /* 텍스트와 2개의 선을 좌우 중앙 배치*/
+   align-items: center; /* 텍스트와 2개의 선을 상하 중앙 배치 */
+   font-size: 36px;
+}
+
+.heading::before,
+.heading::after {
+   content: '';
+   width: 70px;
+   height: 3px;
+   background-color: #e5c046;
+}
+
+
+.heading::before {
+   margin-right: 30px; /* 텍스트와 선 사이 간격 */
+}
+
+.heading::after {
+   margin-left: 30px; /* 텍스트와 선 사이 간격 */
+}

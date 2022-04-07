@@ -1,0 +1,22 @@
+.heading {
+   position: absolute; /* 의사 요소 기준 */
+   padding-top: 10px;
+   font-size: 36px;
+   background-image: linear-gradient( /* 선형 그라데이션 */
+      90deg, /* 90° 회전시켜 그라데이션을 왼쪽에서 오른쪽으로 */
+      #e5c046 0%, #e5c046 30%, /* 선 색상 지정 */
+      rgba(0 0 0 / 0) 30%, rgba(0 0 0 / 0) 100% /* 투명 부분 지정 */
+);
+   background-size: 100% 1px; /* 선의 가로 및 세로 크기 지정 */
+   background-repeat: no-repeat;
+   background-position: left top;
+}
+
+.heading::before { /* 숫자를 의사 요소로 표현 */
+   content: attr(data-number); /* 데이터 속성 로딩 */
+   display: block;
+   margin-bottom: 20px;
+   color: #e5c046;
+   font-size: 32px;
+   font-weight: 800;
+}
