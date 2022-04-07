@@ -1,0 +1,23 @@
+a {
+   display: block;
+   position: relative; /* 테두리선 기준 */
+   padding: 30px 10px;
+   width: 260px;
+   color: #333;
+   font-size: 28px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   background-color: #90be70;
+}
+
+a::before { /* 테두리선을 의사 요소로 표현 */
+   content: '';
+   position: absolute;
+   top: -8px;
+   left: -8px;
+   width: calc(100% - 4px); /* 의사 요소 좌우 테두리선 크기 * 2 만큼 빼는 계산식 */
+   height: calc(100% - 4px); /* 의사 요소 상하 테두리선 사이즈 * 2 만큼 빼는 계산식 */
+   background-color: rgba(0 0 0 / 0); /* 투명하게 만듦 */
+   border: 2px solid #2b550e; /* 테두리선 스타일 */
+}

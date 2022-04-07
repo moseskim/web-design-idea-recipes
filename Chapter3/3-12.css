@@ -1,0 +1,33 @@
+a {
+   display: flex; /* 텍스트와 심플한 화살표를 가로로 배열 */
+   justify-content: space-between; /* 텍스트와 심플한 화살표를 좌우로 배치 */
+   align-items: center; /* 텍스트와 심플한 화살표를 상하 중앙 정렬 및 배치 */
+   position: relative; /* 원의 위치 기준 */
+   padding: 30px 39px 30px 0px;
+   width: 280px;
+   color: #333;
+   font-size: 28px;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+a::before { /* 원을 의사 요소로 표현 */
+   content: '';
+   position: absolute;
+   top: 50%; /* 상하 중앙 배치 ① */
+   right: 0; /* 요소 오른쪽에서 0px 위치에 배치 */
+   transform: translateY(-50%); /* 상하 중앙 배치 ② */
+   width: 80px;
+   height: 80px;
+   border: 2px solid #90be70;
+   border-radius: 50%;
+}
+
+a::after { /* 심플한 화살표를 의사 요소로 표현 */
+   content: '';
+   width: 8px;
+   height: 8px;
+   border-top: 3px solid #2b550e; /* 심플한 화살표의 한 변 */
+   border-right: 3px solid #2b550e; /* 심플한 화살표의 한 변 */
+   transform: rotate(45deg); /* 45° 회전시켜 심플한 화살표로 만듦 */
+}

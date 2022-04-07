@@ -1,0 +1,24 @@
+a {
+   display: block;
+   position: relative; /* 삼각형 화살표 배치 기준 */
+   padding: 30px;
+   width: 260px;
+   color: #333;
+   font-size: 28px;
+   font-weight: 700;
+   text-decoration: none;
+   background-color: #90be70;
+   border-radius: 50px 50px 0 50px; /* 오른쪽 아래 모서리를 제외하고 둥근 모서리 지정 */
+}
+
+a::before { /* 삼각형 화살표를 의사 요소로 표현 */
+   content: '';
+   position: absolute;
+   bottom: 7px;
+   right: 7px;
+   width: 0; /* 삼각형 화살표를 border로 표현하기 위해 0px로 지정 */
+   height: 0; /* 삼각형 화살표를 border로 표현하기 위해 0px로 지정 */
+   border-style: solid;
+   border-color: rgba(0 0 0 / 0) rgba(0 0 0 / 0) #2b550e rgba(0 0 0 / 0); /* 삼각형 화살표의 방향에 맞춰 색을 지정 */
+   border-width: 0 0 14px 14px; /* 삼각형 화살표의 방향에 맞춰 크기 지정 */
+}
