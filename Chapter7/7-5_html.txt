@@ -1,0 +1,56 @@
+<html>
+   <head>
+      <title>Dave's Steak House</title>
+      <script type="application/ld+json">
+      {
+         "@context": "http://schema.org",
+         "@type": "Restaurant", /*①*/
+         "image": "サムネイル画像URL",
+         "name": "店舗名",
+         "address": {
+            "@type": "PostalAddress", /*店舗住所*/
+            "streetAddress": "平和公園1-2-3",
+            "addressLocality": "港区",
+            "addressRegion": "東京都",
+            "postalCode": "123-4567",
+            "addressCountry": "JP"
+         },
+         "geo":{
+            "@type": "GeoCoordinates", /*②*/
+            "latitude": "35.65868", /*緯度*/
+            "longitude": "139.74544" /*経度*/
+         },
+         "url": "サイトURL",
+         "telephone": "電話番号", /*③*/
+         "servesCuisine": "フランス料理", /*料理カテゴリ*/
+         "priceRange": "5,000", /*平均予算*/
+         "openingHoursSpecification": [ /*④*/
+         {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [ /*後述する開店時間と閉店時間が適用される曜日*/
+               "Monday",
+               "Tuesday",
+               "Wednesday",
+               "Thursday",
+               "Friday"
+            ],
+            "opens": "10:00", /*先述した曜日の開店時間*/
+            "closes": "21:00" /*先述した曜日の閉店時間*/
+         },
+         {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [ /*後述する開店時間と閉店時間が適用される曜日*/
+               "Saturday"
+            ],
+            "opens": "12:00", /*先述した曜日の開店時間*/
+            "closes": "23:00" /*先述した曜日の閉店時間*/
+            }
+         ],
+         "menu": "メニューページURL",
+         "acceptsReservations": "true" /*予約状況。予約可の場合はtrue*/
+      }
+      </script>
+   </head>
+   <body>
+   </body>
+</html>

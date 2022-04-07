@@ -1,0 +1,9 @@
+<form class="h-adr">
+   <span class="p-country-name">Japan</span>
+   §<input type="text" class="p-postal-code" size="8"maxlength="8">
+   “s“¹•{Œ§:
+   <input type="text" class="p-region">
+   ZŠ:
+   <input type="text" class="p-locality p-street-address
+p-extended-address">
+</form>

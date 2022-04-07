@@ -1,0 +1,44 @@
+<form>
+   <h2>お問い合わせ種別</h2>
+   <div class="radio__list">
+      <label class="radio__item">
+         <input type="radio" name="radio-item" class="form__input" checked>
+         <span class="radio__label">資料請求したい</span>
+      </label>
+      <label class="radio__item">
+         <input type="radio" name="radio-item" class="form__input">
+         <span class="radio__label">お問い合わせしたい</span>
+      </label>
+      <label class="radio__item">
+         <input type="radio" name="radio-item" class="form__input">
+         <span class="radio__label">採用募集にエントリーしたい</span>
+      </label>
+   </div>
+   <h2>お使いのブラウザ</h2>
+   <div class="checkbox__list">
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">Chrome</span>
+      </label>
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">Firefox</span>
+      </label>
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">Safari</span>
+      </label>
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">Edge</span>
+      </label>
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">Opera</span>
+      </label>
+      <label class="checkbox__item">
+         <input type="checkbox" name="checkbox-item" class="form__input">
+         <span class="checkbox__label">その他</span>
+      </label>
+   </div>
+</form>

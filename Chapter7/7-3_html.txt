@@ -1,0 +1,29 @@
+<html>
+   <head>
+      <title>ページタイトル</title>
+      <script type="application/ld+json">
+      {
+         "@context": "https://schema.org/",
+         "@type": "BreadcrumbList",
+         "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1, /*第1階層（トップページ）*/
+            "name": "トップ",
+            "item": "https://pulpxstyle.com"
+         },{
+            "@type": "ListItem",
+            "position": 2, /*第2階層（カテゴリページ）*/
+            "name": "カテゴリ",
+            "item": "https://pulpxstyle.com/category/"
+         },{
+            "@type": "ListItem",
+            "position": 3, /*第3階層（記事ページ）*/
+            "name": "記事タイトル",
+            "item": "https://pulpxstyle.com/post01/"
+         }]
+      }
+      </script>
+   </head>
+   <body>
+   </body>
+</html>

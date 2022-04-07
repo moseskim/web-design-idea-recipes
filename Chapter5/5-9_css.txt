@@ -1,0 +1,124 @@
+/*radioスタイル*/
+.radio__list {
+   margin-bottom: 50px;
+}
+
+.radio__item {
+   display: block;
+   margin-bottom: 20px;
+}
+
+input[type="checkbox"],
+input[type="radio"] { /*チェックボックスとラジオボタンのスタイルリセット*/
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+}
+
+.radio__label {
+   display: flex; /*ラジオボタンとラベルの横並び*/
+   align-items: center; /*ラジオボタンとラベルの上下中央揃え*/
+   padding: 10px 20px;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   background-color: #c9d8e2;
+   border: 3px solid #96aab7;
+   border-radius: 10px;
+}
+
+.radio__label::before { /*オリジナルのラジオボタン*/
+   content: '';
+   display: inline-block;
+   margin-right: 20px;
+   width: 25px;
+   height: 25px;
+   background-color: #fff;
+   border: 2px solid #96aab7;
+   border-radius: 25px;
+}
+
+input.form__input:checked ~ .radio__label { /*checked状態のボタンスタイル*/
+   color: #f4f4f4;
+   background-color: #053e62;
+}
+
+input.form__input:focus ~ .radio__label { /*focus時のボタンスタイル*/
+   border: 3px solid #0277b4;
+   box-shadow: 0 0 8px #0277b4;
+}
+
+input.form__input:checked ~ .radio__label::before { /*checked状態のラジオボタンスタイル*/
+   background-color: #0277b4;
+   background-image: radial-gradient(#fff 29.5%, #0277b4 31.5%);
+   border: 2px solid #053e62;
+}
+
+/*checkboxスタイル*/
+.checkbox__list {
+   display: flex; /*checkboxアイテムの横並び*/
+   flex-wrap: wrap; /*折り返し指定*/
+   gap: 20px; /*checkboxアイテム間の余白指定*/
+}
+
+.checkbox__item {
+   display: inline-block;
+}
+
+.checkbox__label {
+   display: flex; /*チェックボックスとラベルの横並び*/
+   align-items: center; /*チェックボックスとラベルの上下中央揃え*/
+   position: relative; /*疑似要素::afterの位置基準*/
+   padding: 10px 20px;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 1;
+   background-color: #c9d8e2;
+   border: 3px solid #96aab7;
+   border-radius: 10px;
+}
+
+.checkbox__label::before { /*オリジナルのチェックボックス*/
+   content: '';
+   display: inline-block;
+   margin-right: 20px;
+   width: 25px;
+   height: 25px;
+   background-color: #fff;
+   border: 2px solid #96aab7;
+   border-radius: 6px;
+}
+
+input.form__input:checked ~ .checkbox__label { /*checked状態のボタンスタイル*/
+   color: #f4f4f4;
+   background-color: #053e62;
+}
+
+input.form__input:focus ~ .checkbox__label { /*focus時のボタンスタイル*/
+   border: 3px solid #0277b4;
+   box-shadow: 0 0 8px #0277b4;
+}
+
+input.form__input:checked ~ .checkbox__label::before { /*checked状態のチェックボックススタイル*/
+   background-color: #0277b4;
+   border: 2px solid #053e62;
+}
+
+input.form__input:checked ~ .checkbox__label::after { /*checked状態のチェックマークスタイル*/
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 26px;
+   transform: translateY(-50%) rotate(-45deg);
+   width: 14px;
+   height: 4px;
+   border-bottom: 3px solid #f4f4f4;
+   border-left: 3px solid #f4f4f4;
+}

@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>‚æ‚­‚ ‚é¿–â</title>
+      <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "FAQPage",
+         "mainEntity": [{
+            "@type": "Question", /*1‚Â–Ú‚Ì‚æ‚­‚ ‚é¿–â*/
+            "name": "¿–â•¶Í",
+            "acceptedAnswer": {
+               "@type": "Answer",
+               "text": "•Ô“š•¶Í"
+            }
+         },{
+            "@type": "Question", /*2‚Â–Ú‚Ì‚æ‚­‚ ‚é¿–â*/
+            "name": "¿–â•¶Í",
+            "acceptedAnswer": {
+               "@type": "Answer",
+               "text": "•Ô“š•¶Í"
+            }
+         },{
+            "@type": "Question", /*3‚Â–Ú‚Ì‚æ‚­‚ ‚é¿–â*/
+            "name": "¿–â•¶Í",
+            "acceptedAnswer": {
+               "@type": "Answer",
+               "text": "•Ô“š•¶Í"
+            }
+         }]
+      }
+      </script>
+   </head>
+   <body>
+   </body>
+</html>

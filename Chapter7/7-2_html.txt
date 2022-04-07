@@ -1,0 +1,35 @@
+<html>
+   <head>
+      <title>記事タイトル</title>
+      <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "BlogPosting", /*記事のタイプ*/
+         "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "ページURL"
+         },
+         "headline": "記事タイトル",
+         "description": "説明文",
+         "image": "サムネイル画像URL",
+         "author": { /*著者情報*/
+            "@type": "Person",
+            "name": "著者名",
+            "url": "著者プロフィールページURL"
+         },
+         "publisher": { /*サイト情報*/
+            "@type": "Organization",
+            "name": "サイト名",
+            "logo": {
+               "@type": "ImageObject",
+               "url": "サイトロゴ画像URL"
+            }
+         },
+         "datePublished": "2021-01-27T15:20:30+09:00", /*記事を最初に公開した日時*/
+         "dateModified": "2021-01-28T09:10:55+09:00" /*記事を最後に更新した日時*/
+      }
+      </script>
+   </head>
+   <body>
+   </body>
+</html>
