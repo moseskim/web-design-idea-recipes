@@ -1,7 +1,0 @@
-<div class="container">
-   <div class="contents">
-      <div class="image"><img src="picture.jpg" alt="スマホを見ながらPCを操作する写真"></div>
-
-      <p>テキストの横幅は固定、画像だけを左右画面いっぱいに広げるレイアウトを使う機会は少なくないです。これを実装する際はマークアップで対処していましたが、これからはCSSで実装できます。一括指定できるのでかなり便利ですよ。</p>
-   </div>
-</div>

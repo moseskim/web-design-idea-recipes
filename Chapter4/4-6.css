@@ -1,0 +1,50 @@
+details {
+   margin: 0 auto 10px;
+   width: 580px;
+}
+
+summary {
+   display: flex; /* 질문 문장과 + 아이콘을 가로로 배열하고, 기본 화살표 리셋 */
+   justify-content: space-between; /* 좌우 양끝에 배치 */
+   align-items: center; /* 상하 중앙 배치 */
+   padding: 20px 30px; 
+   font-size: 18px;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+   cursor: pointer; /* 커서를 올렸을 때 pointer 표시 지정 */
+}
+
+summary::-webkit-details-marker { /* Webkit 계열 브라우저의 삼각형 화살표 리셋 */
+   display: none;
+}
+
+summary:hover,
+details[open] summary { /* 질문 문장의 hover 시와 열린 뒤 표시 지정 */
+   background-color: #bbb;
+}
+
+summary::after { /* 플러스 아이콘을 의사 요소로 지정 */
+   content: '+';
+   margin-left: 30px;
+   color: #5b8f8f;
+   font-size: 21px;
+   transition: transform .5s; /* 열릴 때의 애니메이션 지정 */
+}
+
+details[open] summary::after { /* 열린 뒤 플러스 아이콘 지정 */
+   transform: rotate(45deg); /* 45° 회전 */
+}
+
+.answer {
+   padding: 20px;
+   line-height: 1.6;
+}
+
+details[open] .answer {
+   animation: fadein .5s ease; /* 전개 후의 액션 지정 */
+}
+
+@keyframes fadein { /* 불투명도를 0 → 1로 하여 페이드인 효과를 줌 */
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+}

@@ -1,0 +1,26 @@
+.wrap {
+   display: flex; /* 가로 배열 */
+   align-items: center; /* 상하 중앙 배치 */
+   margin: 0 auto 50px;
+   width: 600px;
+}
+
+.wrap:nth-child(even) { /* 짝수 번째만 지정 */
+   flex-direction: row-reverse; /* 요소 위치 반전 */
+}
+
+.image {
+   width: 50%;
+}
+
+.text {
+   padding: 0 30px;
+   width: 50%;
+}
+
+img {
+   display: block;
+   width: 100%;
+   height: auto;
+   border-radius: 10px;
+}

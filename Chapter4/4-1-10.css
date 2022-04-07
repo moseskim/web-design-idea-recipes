@@ -1,0 +1,16 @@
+dl {
+   display: flex; /* 가로 배열*/
+   justify-content: space-between; /* 좌우 양끝 정렬 */
+}
+
+dt {
+   padding: 20px 30px;
+   width: 230px;
+   border-bottom: 2px solid #5b8f8f;
+}
+
+dd {
+   padding: 20px 30px;
+   width: calc(100% - 230px); /* dt의 가로 폭만큼을 빼서 dd의 폭을 반응형에 대응 */
+   border-bottom: 2px solid #bbb;
+}

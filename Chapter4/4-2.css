@@ -1,0 +1,25 @@
+.contents {
+   margin-right: auto;
+   margin-left: auto;
+   width: 400px;
+}
+
+.contents p {
+   margin-bottom: 50px;
+}
+
+.image {
+   margin-right: calc(50% - 50vw);/*�v�f����50%�����ʉ���50vw�����������v�Z��*/
+   margin-left: calc(50% - 50vw);/*�v�f����50%�����ʉ���50vw�����������v�Z��*/
+   margin-bottom: 50px;
+}
+
+.image img {
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.container {
+   overflow-x: hidden; /*���X�N���[����h��*/
+}

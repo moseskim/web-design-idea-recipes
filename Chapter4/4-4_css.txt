@@ -1,5 +1,0 @@
-.image {
-   display: flex; /*‰¡•À‚Ñ*/
-   justify-content: center; /*¶‰E’†‰›‘µ‚¦*/
-   align-items: center; /*ã‰º’†‰›‘µ‚¦*/
-}
