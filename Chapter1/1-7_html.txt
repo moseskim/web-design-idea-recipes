@@ -1,3 +1,0 @@
-<div class="pic">
-   <img src="picture.jpg" alt="グループが談笑している写真">
-</div>

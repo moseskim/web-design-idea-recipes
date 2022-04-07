@@ -1,9 +1,0 @@
-.heading {
-   -webkit-text-stroke: 3px #555; /*テキスト枠線のスタイル指定*/
-   text-shadow: 4px 4px 0 #e5c046; /*黄色テキスト部分のスタイル指定*/
-   color: rgba(0 0 0 / 0); /*本来のテキスト部分を透過指定*/
-   font-size: 100px;
-   font-weight: 700;
-   font-style: italic;
-   font-family: 'Montserrat', sans-serif;
-}

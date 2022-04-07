@@ -1,6 +1,0 @@
-.emphasis {
-   background-image: linear-gradient( /*線形グラデーション*/
-      rgba(0 0 0 / 0) 70%, /*透明*/
-      #e5c046 70% /*蛍光ペンの線を表現*/
-   );
-}
