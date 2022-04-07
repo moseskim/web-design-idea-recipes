@@ -1,0 +1,23 @@
+.pic {
+   position: relative; /*疑似要素の基準*/
+}
+
+.pic img {
+   position: relative; /*z-indexを効かせるために必要*/
+   z-index: 2; /*写真をドットパターンの上の階層に表示させる*/
+}
+.pic::before {
+   content: '';
+   position: absolute;
+   bottom: -30px;
+   right: -30px;
+   width: 100%; /*包括する親要素の横サイズ100%*/
+   height: 100%; /*包括する親要素の縦サイズ100%*/
+   background-image: radial-gradient(
+      #ea987e 20%, /*ドットの色とサイズを指定*/
+      rgba(0 0 0 / 0) 21%
+   );
+   background-size: 10px 10px; /*リピートさせない状態でのbackgroundのサイズを指定*/
+   background-position: right bottom; /*ドットパターン開始位置を指定*/
+   z-index: 1; /*ドットパターンを写真の下の階層に表示させる*/
+}

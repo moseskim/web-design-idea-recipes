@@ -1,0 +1,3 @@
+<div class="pic">
+   <img src="picture.jpg" alt="ƒR[ƒq‚ðˆù‚Þ—«‚ÌŽÊ^">
+</div>

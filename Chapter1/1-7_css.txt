@@ -1,0 +1,25 @@
+.pic {
+   position: relative; /*疑似要素の基準*/
+}
+
+.pic::before,
+.pic::after {
+   content: '';
+   position: absolute;
+   transform: rotate(-35deg); /*35°回転*/
+   width: 70px;
+   height: 25px;
+   background-color: #fff; /*背景色と同じ色を指定*/
+}
+
+.pic::before {
+   top: -10px;
+   left: -25px;
+   border-bottom: 1px solid #aaa; /*背景色に合わせてグレー色の線で切れ目を表現*/
+}
+
+.pic::after {
+   bottom: -10px;
+   right: -25px;
+   border-top: 1px solid #aaa; /*背景色に合わせてグレー色の線で切れ目を表現*/
+}

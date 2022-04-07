@@ -1,0 +1,11 @@
+.backgroundclip {
+   background-clip: text; /*background-clipの対象をテキストにする*/
+   -webkit-background-clip: text; /*background-clipの対象をテキストにする（Firefox以外のモダンブラウザ対応*/
+   background-image: url(picture.jpg); /*クリッピングさせる背景写真*/
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: rgba(0 0 0 / 0); /*テキストカラーを透明にする*/
+   font-size: 200px;
+   font-weight: 700;
+   text-transform: uppercase; /*テキストを大文字にする*/
+}

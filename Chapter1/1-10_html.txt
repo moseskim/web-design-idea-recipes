@@ -1,0 +1,1 @@
+<img src="picture.jpg" alt="カフェで女性が横を向いている写真">

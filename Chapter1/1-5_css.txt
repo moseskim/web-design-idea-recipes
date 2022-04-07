@@ -1,0 +1,21 @@
+.pic {
+   position: relative; /*疑似要素の基準*/
+}
+.pic::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% - 20px); /*左右の斜線枠半分の値x2を差引いた計算式*/
+   height: calc(100% - 20px); /*左右の斜線枠半分の値x2を差引いた計算式*/
+   border-image-source: repeating-linear-gradient(
+      45deg, /*45°回転*/
+      #ea987e 0px, #ea987e 2px, /*色の付いた線*/
+      rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px /*余白（透明）部分*/
+   );
+   border-image-slice: 20; /*border 4辺の使用範囲を指定*/
+   border-width: 20px; /*ボーダーの幅*/
+   border-image-repeat: round; /*タイル状に繰り返して表示*/
+   border-style: solid; /*1本の線として表現*/
+}

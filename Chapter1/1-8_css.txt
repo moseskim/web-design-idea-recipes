@@ -1,0 +1,13 @@
+img {
+   mix-blend-mode: multiply; /*ƒƒS‰æ‘œ‚Ì”’”wŒiF‚ğ“§‰ß*/
+}
+
+.logo {
+   display: flex;
+   justify-content: center; /*ƒƒS‰æ‘œ‚Ì¶‰E’†‰›”z’u*/
+   align-items: center; /*ƒƒS‰æ‘œ‚Ìã‰º’†‰›”z’u*/
+   background-image: url(background-picture.jpg); /*”wŒiÊ^‚ğw’è*/
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
