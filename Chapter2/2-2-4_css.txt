@@ -1,0 +1,10 @@
+.emphasis p {
+   box-decoration-break: clone; /*1行ごとにスタイルを指定できるようにする*/
+   -webkit-box-decoration-break: clone; /*Firefox以外にも適用*/
+   display: inline;
+   padding: 10px;
+   font-size: 32px;
+   font-weight: 700;
+   line-height: 2.2;
+   background-color: #e5c046;
+}

@@ -1,0 +1,25 @@
+.heading {
+   position: relative; /*疑似要素の基準*/
+   font-size: 26px;
+   text-align: center;
+   line-height: 1;
+}
+
+.heading::before { /*数字を擬似要素で表現*/
+   content: attr(data-number); /*データ属性の読み込み*/
+   display: block;
+   margin-bottom: 50px;
+   color: #e5c046;
+   font-size: 30px;
+}
+
+.heading::after { /*線を擬似要素で表現*/
+   content: '';
+   position: absolute;
+   top: 45px;
+   left: 50%; /*左右中央配置*/
+   transform: translateX(-50%); /*左右中央配置*/
+   width: 1px;
+   height: 20px;
+   background-color: #e5c046;
+}

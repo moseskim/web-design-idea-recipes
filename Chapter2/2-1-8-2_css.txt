@@ -1,0 +1,18 @@
+.heading {
+   padding: 0 2em 20px;
+   font-size: 26px;
+   background-image:
+      repeating-linear-gradient( /*反復線形グラデーション*/
+         45deg, /*斜線にするために45°回転させる*/
+         #e5c046 0px, #e5c046 1px, /*線の色と幅を指定*/
+         rgba(0 0 0 / 0) 0%, rgba(0 0 0 / 0) 50% /*線間の余白指定*/
+      ),
+      repeating-linear-gradient( /*反復線形グラデーション*/
+         -45deg, /*斜線にするために-45°回転させる*/
+         #e5c046 0px, #e5c046 1px, /*線の色と幅を指定*/
+         rgba(0 0 0 / 0) 0%, rgba(0 0 0 / 0) 50% /*線間の余白指定*/
+      );
+   background-size: 8px 8px; /*線形グラデーションを指定したbackgroundのサイズ*/
+   background-repeat: repeat-x; /*背景の繰り返し指定*/
+   background-position: center bottom;
+}

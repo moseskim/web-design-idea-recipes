@@ -1,0 +1,13 @@
+.heading {
+   padding: 0 2em 20px;
+   font-size: 26px;
+   background-image:
+   repeating-linear-gradient( /*反復線形グラデーション*/
+      90deg, /*斜線にするために90°回転させる*/
+      #e5c046 0px, #e5c046 12px, /*線の色指定*/
+      rgba(0 0 0 / 0) 12px, rgba(0 0 0 / 0) 20px /*線間の余白指定*/
+   );
+   background-size: 20px 2px; /*線形グラデーションを指定したbackgroundのサイズ*/
+   background-repeat: repeat-x; /*背景の繰り返し指定*/
+   background-position: center bottom;
+}

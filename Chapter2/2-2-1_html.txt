@@ -1,0 +1,2 @@
+<p>強調したいテキストに<span class="emphasis">マークをつけること</span>がで
+きます。</p>

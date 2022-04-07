@@ -1,0 +1,24 @@
+.heading {
+   display: flex; /*テキストと2本の線を横並びさせる指定*/
+   justify-content: center; /*テキストと2本の線を左右中央配置*/
+   align-items: center; /*テキストと2本の線を上下中央配置*/
+   font-size: 32px;
+}
+
+.heading::before,
+.heading::after {
+   content: '';
+   width: 3px;
+   height: 40px;
+   background-color: #e5c046;
+}
+
+.heading::before {
+   margin-right: 30px;
+   transform: rotate(-35deg); /*線を-35°回転させる*/
+}
+
+.heading::after {
+   margin-left: 30px;
+   transform: rotate(35deg); /*線を35°回転させる*/
+}

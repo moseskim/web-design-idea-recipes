@@ -1,0 +1,22 @@
+.heading {
+   position: relative; /*疑似要素の基準*/
+   padding-top: 10px;
+   font-size: 26px;
+   background-image: linear-gradient( /*線形グラデーション*/
+      90deg, /*90°回転させてグラデーションを左から右へ*/
+      #e5c046 0%, #e5c046 30%, /*線の色指定*/
+      rgba(0 0 0 / 0) 30%, rgba(0 0 0 / 0) 100% /*透明部分の指定*/
+);
+   background-size: 100% 1px; /*線の横と縦のサイズ指定*/
+   background-repeat: no-repeat;
+   background-position: left top;
+}
+
+.heading::before { /*数字を擬似要素で表現*/
+   content: attr(data-number); /*データ属性の読み込み*/
+   display: block;
+   margin-bottom: 20px;
+   color: #e5c046;
+   font-size: 26px;
+   font-weight: 800;
+}

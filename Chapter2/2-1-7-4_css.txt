@@ -1,0 +1,22 @@
+.heading {
+   position: relative; /*疑似要素の基準*/
+   padding: 1em;
+   font-size: 26px;
+   border-bottom: 2px solid #e5c046;
+}
+
+.heading span {
+   position: relative; /*z-indexを効かせるために必要*/
+   z-index: 2; /*日本語テキストの重なり指定*/
+}
+
+.heading::before { /*数字テキストを擬似要素で表現*/
+   content: attr(data-number); /*データ属性の読み込み*/
+   position: absolute;
+   top: 0;
+   left: 0;
+   color: rgba(229 192 70 / .4); /*半透明のテキスト色指定*/
+   font-size: 54px;
+   font-weight: 800;
+   z-index: 1;
+}

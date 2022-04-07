@@ -1,0 +1,17 @@
+.heading {
+   position: relative; /*疑似要素の基準*/
+   padding-left: 2em; /*日本語テキストの左余白指定*/
+   font-size: 26px;
+}
+
+.heading::before { /*数字と下線を擬似要素で表現*/
+   content: attr(data-number); /*データ属性の読み込み*/
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding-bottom: 5px;
+   color: #e5c046;
+   font-size: 26px;
+   font-weight: 800;
+   border-bottom: 1px solid #e5c046;
+}
