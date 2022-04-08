@@ -1,4 +1,4 @@
-/*radioƒXƒ^ƒCƒ‹*/
+/* radio ìŠ¤íƒ€ì¼ */
 .radio__list {
    margin-bottom: 50px;
 }
@@ -9,7 +9,7 @@
 }
 
 input[type="checkbox"],
-input[type="radio"] { /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒWƒIƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹ƒŠƒZƒbƒg*/
+input[type="radio"] { /* ì²´í¬ ë°•ìŠ¤ì™€ ë¼ë””ì˜¤ ë²„íŠ¼ ìŠ¤íƒ€ì¼ ë¦¬ì…‹ */
    position: absolute;
    white-space: nowrap;
    width: 1px;
@@ -23,8 +23,8 @@ input[type="radio"] { /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒWƒIƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹ƒŠƒZƒbƒg*/
 }
 
 .radio__label {
-   display: flex; /*ƒ‰ƒWƒIƒ{ƒ^ƒ“‚Æƒ‰ƒxƒ‹‚Ì‰¡•À‚Ñ*/
-   align-items: center; /*ƒ‰ƒWƒIƒ{ƒ^ƒ“‚Æƒ‰ƒxƒ‹‚Ìã‰º’†‰›‘µ‚¦*/
+   display: flex; /* ë¼ë””ì˜¤ ë²„íŠ¼ê³¼ ë¼ë²¨ ê°€ë¡œ ë°°ì—´ */
+   align-items: center; /* ë¼ë””ì˜¤ ë²„íŠ¼ê³¼ ë¼ë²¨ ìƒí•˜ ì¤‘ì•™ ì •ë ¬ */
    padding: 10px 20px;
    font-size: 21px;
    font-weight: 700;
@@ -34,7 +34,7 @@ input[type="radio"] { /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒWƒIƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹ƒŠƒZƒbƒg*/
    border-radius: 10px;
 }
 
-.radio__label::before { /*ƒIƒŠƒWƒiƒ‹‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“*/
+.radio__label::before { /* ì˜¤ë¦¬ì§€ë„ ë¼ë””ì˜¤ ë²„íŠ¼ */
    content: '';
    display: inline-block;
    margin-right: 20px;
@@ -45,27 +45,27 @@ input[type="radio"] { /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒWƒIƒ{ƒ^ƒ“‚ÌƒXƒ^ƒCƒ‹ƒŠƒZƒbƒg*/
    border-radius: 25px;
 }
 
-input.form__input:checked ~ .radio__label { /*checkedó‘Ô‚Ìƒ{ƒ^ƒ“ƒXƒ^ƒCƒ‹*/
+input.form__input:checked ~ .radio__label {/* checked ìƒíƒœì˜ ë²„íŠ¼ ìŠ¤íƒ€ì¼ */
    color: #f4f4f4;
    background-color: #053e62;
 }
 
-input.form__input:focus ~ .radio__label { /*focus‚Ìƒ{ƒ^ƒ“ƒXƒ^ƒCƒ‹*/
+input.form__input:focus ~ .radio__label { /* focus ìƒíƒœì˜ ë²„íŠ¼ ìŠ¤íƒ€ì¼ */
    border: 3px solid #0277b4;
    box-shadow: 0 0 8px #0277b4;
 }
 
-input.form__input:checked ~ .radio__label::before { /*checkedó‘Ô‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“ƒXƒ^ƒCƒ‹*/
+input.form__input:checked ~ .radio__label::before { /* checked ìƒíƒœì˜ ë¼ë””ì˜¤ ë²„íŠ¼ ìŠ¤íƒ€ì¼ */
    background-color: #0277b4;
    background-image: radial-gradient(#fff 29.5%, #0277b4 31.5%);
    border: 2px solid #053e62;
 }
 
-/*checkboxƒXƒ^ƒCƒ‹*/
+/* checkbox ìŠ¤íƒ€ì¼ */
 .checkbox__list {
-   display: flex; /*checkboxƒAƒCƒeƒ€‚Ì‰¡•À‚Ñ*/
-   flex-wrap: wrap; /*Ü‚è•Ô‚µw’è*/
-   gap: 20px; /*checkboxƒAƒCƒeƒ€ŠÔ‚Ì—]”’w’è*/
+   display: flex; /* checkbox ì•„ì´í…œ ê°€ë¡œ ë°°ì—´ */
+   flex-wrap: wrap; /* ì¤„ë°”ê¿ˆ ì§€ì • */
+   gap: 20px; /* checkbox ì•„ì´í…œ ì‚¬ì´ì˜ ì—¬ë°± ì§€ì • */
 }
 
 .checkbox__item {
@@ -73,9 +73,9 @@ input.form__input:checked ~ .radio__label::before { /*checkedó‘Ô‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“ƒ
 }
 
 .checkbox__label {
-   display: flex; /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒxƒ‹‚Ì‰¡•À‚Ñ*/
-   align-items: center; /*ƒ`ƒFƒbƒNƒ{ƒbƒNƒX‚Æƒ‰ƒxƒ‹‚Ìã‰º’†‰›‘µ‚¦*/
-   position: relative; /*‹^——v‘f::after‚ÌˆÊ’uŠî€*/
+   display: flex; /* ì²´í¬ ë°•ìŠ¤ì™€ ë¼ë²¨ ê°€ë¡œ ë°°ì—´ */
+   align-items: center; /* ì²´í¬ ë°•ìŠ¤ì™€ ë¼ë²¨ ìƒí•˜ ì¤‘ì•™ ì •ë ¬ */
+   position: relative; /* ì˜ì‚¬ ìš”ì†Œ ::afterì˜ ìœ„ì¹˜ ê¸°ì¤€ */
    padding: 10px 20px;
    font-size: 21px;
    font-weight: 700;
@@ -85,7 +85,7 @@ input.form__input:checked ~ .radio__label::before { /*checkedó‘Ô‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“ƒ
    border-radius: 10px;
 }
 
-.checkbox__label::before { /*ƒIƒŠƒWƒiƒ‹‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒX*/
+.checkbox__label::before { /* ì˜¤ë¦¬ì§€ë„ ì²´í¬ ë°•ìŠ¤ */
    content: '';
    display: inline-block;
    margin-right: 20px;
@@ -96,22 +96,22 @@ input.form__input:checked ~ .radio__label::before { /*checkedó‘Ô‚Ìƒ‰ƒWƒIƒ{ƒ^ƒ“ƒ
    border-radius: 6px;
 }
 
-input.form__input:checked ~ .checkbox__label { /*checkedó‘Ô‚Ìƒ{ƒ^ƒ“ƒXƒ^ƒCƒ‹*/
+input.form__input:checked ~ .checkbox__label { /* checked ìƒíƒœì˜ ë²„íŠ¼ ìŠ¤íƒ€ì¼ */
    color: #f4f4f4;
    background-color: #053e62;
 }
 
-input.form__input:focus ~ .checkbox__label { /*focus‚Ìƒ{ƒ^ƒ“ƒXƒ^ƒCƒ‹*/
+input.form__input:focus ~ .checkbox__label { /* focus ìƒíƒœì˜ ë²„íŠ¼ ìŠ¤íƒ€ì¼ */
    border: 3px solid #0277b4;
    box-shadow: 0 0 8px #0277b4;
 }
 
-input.form__input:checked ~ .checkbox__label::before { /*checkedó‘Ô‚Ìƒ`ƒFƒbƒNƒ{ƒbƒNƒXƒXƒ^ƒCƒ‹*/
+input.form__input:checked ~ .checkbox__label::before { /* checked ìƒíƒœì˜ ì²´í¬ ë°•ìŠ¤ ìŠ¤íƒ€ì¼ */
    background-color: #0277b4;
    border: 2px solid #053e62;
 }
 
-input.form__input:checked ~ .checkbox__label::after { /*checkedó‘Ô‚Ìƒ`ƒFƒbƒNƒ}[ƒNƒXƒ^ƒCƒ‹*/
+input.form__input:checked ~ .checkbox__label::after { /* checked ìƒíƒœì˜ ì²´í¬ ë§ˆí¬ ìŠ¤íƒ€ì¼ */
    content: '';
    position: absolute;
    top: 50%;
