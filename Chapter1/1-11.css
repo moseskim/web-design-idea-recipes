@@ -1,11 +1,15 @@
+.body {
+   display: flex;
+
+}
 .backgroundclip {
-   background-clip: text; /* background-clip 대상을 텍스트로 지정한다 */
-   -webkit-background-clip: text; /* background-clip의 대상을 텍스트로 한다（Firefox 이외의 모던 브라우저에 대응) */
    background-image: url(../images/pic054.jpg); /* 잘라낼 배경 이미지 */
    background-repeat: no-repeat;
-   background-size: cover;
+   background-size: 100% cover;
+   background-clip: text; /* background-clip 대상을 텍스트로 지정한다 */
+   -webkit-background-clip: text; /* background-clip의 대상을 텍스트로 한다（Firefox 이외의 모던 브라우저에 대응) */
    color: rgba(0 0 0 / 0); /* 텍스트 색상을 투명으로 한다 */
    font-size: 200px;
-   font-weight: 700;
+   font-weight: 800;
    text-transform: uppercase; /* 텍스트를 대문자로 변경한다 */
 }
