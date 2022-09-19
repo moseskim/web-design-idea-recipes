@@ -1,6 +1,6 @@
 dl {
    display: flex; /* 가로 배열*/
-   justify-content: space-between; /* 좌우 양끝 정렬 */
+   justify-content: space-between; /* 좌우 양 끝 정렬 */
 }
 
 dt {
@@ -11,6 +11,7 @@ dt {
 
 dd {
    padding: 20px 30px;
-   width: calc(100% - 230px); /* dt의 가로 폭만큼을 빼서 dd의 폭을 반응형에 대응 */
+   width: calc(100% - 230px); 
    border-bottom: 2px solid #bbb;
+   margin-inline-start: 0px;
 }
