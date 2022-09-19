@@ -3,8 +3,8 @@
    padding-bottom: 30px;
    font-size: 36px;
    text-align: center;
-   background-image: linear-gradient( /* 선을 선형 그라데이션으로 표현 */
-      90deg, /* 그라데이션의 방향을 왼쪽에서 오른쪽으로 */
+   background-image: linear-gradient( /* 선을 선형 그러데이션으로 표현 */
+      90deg, /* 그러데이션의 방향을 왼쪽에서 오른쪽으로 */
       rgba(0 0 0 / 0) 0%, rgba(0 0 0 / 0) 35%, /* 선의 왼쪽 투명 부분 지정 */
       #e5c046 35%, #e5c046 65%, /* 선 표현 */
       rgba(0 0 0 / 0) 65%, rgba(0 0 0 / 0) 100% /* 선의 오른쪽 투명 부분 지정 */
