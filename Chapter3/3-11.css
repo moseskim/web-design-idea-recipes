@@ -1,24 +1,32 @@
 a {
-   display: block;
-   position: relative; /* 삼각형 화살표 배치 기준 */
-   padding: 30px;
+   display: flex; /* 텍스트와 다른 창 박스를 가로로 배열 */
+   justify-content: space-between; /* 텍스트와 다른 창 박스를 좌우 양쪽 정렬 */
+   align-items: center; /* 텍스트와 다른 창 박스를 상하 중앙 정렬 */
+   position: relative; /* 다른 창 박스의 L자 배치 기준 */
+   padding: 30px 33px 30px 30px;
    width: 260px;
    color: #333;
    font-size: 28px;
    font-weight: 700;
    text-decoration: none;
    background-color: #90be70;
-   border-radius: 50px 50px 0 50px; /* 오른쪽 아래 모서리를 제외하고 둥근 모서리 지정 */
+   border-radius: 50px;
 }
 
-a::before { /* 삼각형 화살표를 의사 요소로 표현 */
+a::before { /* 다른 창 박스의 L자를 의사 요소로 표현 */
    content: '';
    position: absolute;
-   bottom: 7px;
-   right: 7px;
-   width: 0; /* 삼각형 화살표를 border로 표현하기 위해 0px로 지정 */
-   height: 0; /* 삼각형 화살표를 border로 표현하기 위해 0px로 지정 */
-   border-style: solid;
-   border-color: rgba(0 0 0 / 0) rgba(0 0 0 / 0) #2b550e rgba(0 0 0 / 0); /* 삼각형 화살표의 방향에 맞춰 색을 지정 */
-   border-width: 0 0 14px 14px; /* 삼각형 화살표의 방향에 맞춰 크기 지정 */
+   bottom: 40px;
+   right: 28px;
+   width: 18px;
+   height: 12px;
+   border-right: 2px solid #2b550e;
+   border-bottom: 2px solid #2b550e;
+}
+
+a::after { /* 다른 창 박스를 의사 요소로 표현 */
+   content: '';
+   width: 18px;
+   height: 12px;
+   border: 2px solid #2b550e;
 }

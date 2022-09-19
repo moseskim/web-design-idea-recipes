@@ -1,9 +1,9 @@
 a {
-   display: flex; /* 텍스트와 다른 창 박스를 가로로 배열 */
-   justify-content: space-between; /* 텍스트와 다른 창 박스를 좌우 양쪽 정렬 */
-   align-items: center; /* 텍스트와 다른 창 박스를 상하 중앙 정렬 */
-   position: relative; /* 다른 창 박스의 L자 배치 기준 */
-   padding: 30px 33px 30px 30px;
+   display: flex; /* 텍스트와 심플한 화살표를 가로로 배열 */
+   justify-content: space-between; /* 텍스트와 심플한 화살표를 좌우에 배치 */
+   align-items: center; /* 텍스트와 심플한 화살표를 상하 중앙 정렬 및 배치 */
+   position: relative; /* 화살표 선 위치 기준*/
+   padding: 30px;
    width: 260px;
    color: #333;
    font-size: 28px;
@@ -13,20 +13,21 @@ a {
    border-radius: 50px;
 }
 
-a::before { /* 다른 창 박스의 L자를 의사 요소로 표현 */
+a::before { /* 화살표의 대각선 막대를 의사 요소로 표현 */
    content: '';
    position: absolute;
-   bottom: 40px;
-   right: 28px;
-   width: 18px;
-   height: 12px;
-   border-right: 2px solid #2b550e;
-   border-bottom: 2px solid #2b550e;
+   top: 50%; /* 상하 중앙 배치 */
+   right: 29px; /* 요소 오른쪽에서 29px 위치에 배치 */
+   transform: translateY(-50%) rotate(-45deg); /* 상하 중앙 배치 및 -45° 회전*/
+   width: 15px;
+   height: 2px;
+   background-color: #2b550e;
 }
 
-a::after { /* 다른 창 박스를 의사 요소로 표현 */
+a::after { /* 심플한 화살표를 의사 요소로 표현 */
    content: '';
-   width: 18px;
+   width: 12px;
    height: 12px;
-   border: 2px solid #2b550e;
+   border-top: 2px solid #2b550e; /* 심플한 화살표의 한 변 */
+   border-right: 2px solid #2b550e; /* 심플한 화살표의 한 변 */
 }

@@ -25,8 +25,8 @@ a::before { /* 대각선 배경 지정 */
    right: -5px; /* 기준 오른쪽에서 -5px 이동 */
    width: 100%;
    height: 100%;
-   background-image: repeating-linear-gradient( /* 대각선을 선형 그라데이션으로 표현 */
-      -45deg, /* 선형 그라데이션을 -45° 회전시킴 */
+   background-image: repeating-linear-gradient( /* 대각선을 선형 그러데이션으로 표현 */
+      -45deg, /* 선형 그러데이션을 -45° 회전시킴 */
       #2b550e 0px, #2b550e 2px, /* 색을 입힌 선을 표현 */
       rgba(0 0 0 / 0) 0%, rgba(0 0 0 / 0) 50% /* 여백(투명) 부분을 표현 */
    );

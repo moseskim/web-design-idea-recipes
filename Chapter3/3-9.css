@@ -28,7 +28,7 @@ a::after { /* 화살표의 가로 막대를 의사 요소로 표현 */
    top: 50%; /* 상하 중앙 배치 */
    left: 30px; /* 요소의 왼쪽에서 30px 위치에 배치 */
    transform: translateY(-50%); /* 상하 중앙 배치 */
-   width: 15px;
+   width: 14px;
    height: 2px;
    background-color: #2b550e;
 }
