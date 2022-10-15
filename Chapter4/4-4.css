@@ -1,5 +1,0 @@
-.image {
-   display: flex; /* 가로 배열 */
-   justify-content: center; /* 좌우 중앙 정렬 */
-   align-items: center; /* 상하 중앙 정렬 */
-}
