@@ -1,0 +1,23 @@
+.heading {
+   position: relative; /* 영문 텍스트 배치 기준 */
+   padding-top: 50px; /* 한국어 텍스트의 위쪽 여백 */
+   padding-left: 30px; /* 한국어 텍스트의 왼쪽 여백 */
+   font-size: 36px;
+}
+
+.heading span {
+   position: relative; /* z-index를 활성화하기 위해 필요 */
+   z-index: 0; /* 한국어 텍스트를 영문자 텍스트 위에 지정 */
+}
+
+.heading::before { /* 영문자 텍스트를 의사 요소로 표현 */
+   content: attr(data-en); /* 데이터 속성 로딩 */
+   position: absolute;
+   transform: rotate(-5deg); /* 영문자 텍스트를 기울임 */
+   top: 0px;
+   left: 0px;
+   color: #e5c046;
+   font-size: 80px;
+   font-weight: 400;
+   font-family: 'Mrs Saint Delafield', cursive;
+}

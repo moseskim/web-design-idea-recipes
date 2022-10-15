@@ -1,0 +1,6 @@
+.emphasis {
+   background-image: linear-gradient( /* 선형 그라데이션 */
+      rgba(0 0 0 / 0) 70%, /* 투명 */
+      #e5c046 70% /* 형광펜 선을 표현 */
+   );
+}

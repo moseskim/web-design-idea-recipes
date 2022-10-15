@@ -1,0 +1,7 @@
+.emphasis {
+    text-emphasis: open circle #e5c046;
+    -webkit-text-emphasis: open circle #e5c046;
+      /* text-emphasis: double-circle #e5c046; */
+      /* -webkit-text-emphasis: double-circle #e5c046; */
+
+}

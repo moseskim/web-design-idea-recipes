@@ -1,0 +1,14 @@
+.heading {
+   position: absolute;
+   padding: 0 2em 20px;
+   font-size: 36px;
+   background-image:
+   repeating-linear-gradient( /* 반복 선형 그라데이션 */
+      90deg, /* 90° 회전시켜 수평선으로 만듦 */
+      #e5c046 0px, #e5c046 12px, /* 선 색상 지정 */
+      rgba(0 0 0 / 0) 12px, rgba(0 0 0 / 0) 20px /* 선 사이의 여백 지정 */
+   );
+   background-size: 20px 2px; /* 선형 그라데이션을 지정한 backgournd의 크기 */
+   background-repeat: repeat-x; /* 배경 반복 지정 */
+   background-position: center bottom;
+}

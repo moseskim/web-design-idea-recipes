@@ -1,0 +1,18 @@
+.heading {
+   position: relative; /*�^���v�f�̊*/
+   padding-left: 2em; /*���{��e�L�X�g�̍��]���w��*/
+   padding-bottom: 1em; /* 한글 문구 아래 여백 지정 */
+   font-size: 36px;
+}
+
+.heading::before { /*�����Ɖ������[���v�f�ŕ\��*/
+   content: attr(data-number); /*�f�[�^�����̓ǂݍ���*/
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   padding-bottom: 5px;
+   color: #e5c046;
+   font-size: 32px;
+   font-weight: 800;
+   border-bottom: 1px solid #e5c046;
+}
