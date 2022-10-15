@@ -1,10 +1,12 @@
 .pic {
    position: absolute; /* 의사 요소 기준*/
 }
+
 .pic img {
    position: relative; /* z-index를 활성화하기 위해 필요 */
    z-index: 2; /* 대각선 위의 계층에 표시한다 */
 }
+
 .pic::before {
    content: '';
    position: absolute;
