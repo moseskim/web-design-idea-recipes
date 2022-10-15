@@ -1,0 +1,32 @@
+ol {
+   display: flex; /* 가로 배열 */
+   justify-content: center; /* 좌우 중앙 정렬 */
+   align-items: center; /* 상하 중앙 정렬 */
+   flex-wrap: wrap; /* 줄바꿈 지정 */
+   list-style: none;
+}
+
+li:not(:last-child) { /* 가장 마지막 li 이외에 지정 */
+   margin-right: 10px;
+}
+
+li a {
+   display: block;
+   padding: 20px;
+   color: #111;
+   text-decoration: none;
+   line-height: 1;
+   background-color: #e6e6e6;
+   border: 2px solid #5b8f8f;
+   border-radius: 10px;
+}
+
+li span {
+   display: block;
+   padding: 20px;
+   color: #f2f2f2;
+   line-height: 1;
+   background-color: #5b8f8f;
+   border: 2px solid #5b8f8f;
+   border-radius: 10px;
+}

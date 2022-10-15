@@ -1,0 +1,18 @@
+dl {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* 좌우 양 끝 정렬 */
+}
+
+dt {
+   padding: 20px 30px;
+   width: 100%;
+   border-bottom: 2px solid #5b8f8f;
+}
+
+dd {
+   padding: 20px 30px;
+   width: 100%; 
+   border-bottom: 2px solid #bbb;
+   margin-inline-start: 0px;
+}

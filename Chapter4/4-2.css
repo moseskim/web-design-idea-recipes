@@ -1,0 +1,24 @@
+.wrap {
+   display: flex; /* 가로 배열 */
+   flex-wrap: wrap; /* 줄바꿈(반환) */
+}
+
+.item {
+   padding: 20px;
+   width: 32%;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+}
+
+.item:not(:nth-child(3n+3)) { /* 3의 배수 이외의 .item에 지정 */
+   margin-right: 2%;
+}
+
+.item:nth-child(n+4) { /* 4번째 이후의 .item에 지정 */
+   margin-top: 30px;
+}
+
+img {
+   width: 100%;
+   border-radius: 10px;
+}

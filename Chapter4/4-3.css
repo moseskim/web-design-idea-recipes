@@ -1,0 +1,32 @@
+ul {
+   display: flex; /*가로 배열 */
+   justify-content: space-between; /* 좌우 양쪽 정렬 */
+   width: 800px;
+   list-style: none;
+}
+
+li {
+   width: 25%;
+   border-left: 1px solid #5b8f8f;
+}
+
+li:last-child {
+   border-right: 1px solid #5b8f8f;
+}
+
+li a {
+   display: flex;
+   flex-direction: column; /* Flex 아이템을 세로로 배열 */
+   padding: 10px 0;
+   color: #333;
+   font-size: 28px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   line-height: 1.6;
+}
+
+li a span {
+   color: #5b8f8f;
+   font-size: 13px;
+}

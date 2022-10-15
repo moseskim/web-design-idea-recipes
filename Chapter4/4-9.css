@@ -1,0 +1,49 @@
+label {
+   display: flex; /* 가로 배열 */
+   align-self: center; /* 상하 중앙 정렬 */
+}
+
+label:not(:last-child) { /* 가장 마지막 label을 제외하고 지정 */
+   margin-bottom: 20px;
+}
+
+.title {
+   display: flex; /* 가로 배열*/
+   justify-content: space-between; /* 좌우 양쪽 정렬 */
+   align-self: center; /* 상하 중앙 정렬 */
+   padding-right: 20px;
+   width: 220px;
+   font-weight: 700;
+}
+
+.title-textarea {
+   display: flex; /* 가로 배열 */
+   justify-content: space-between; /* 좌우 양쪽 정렬 */
+   align-self: flex-start; /* Flex 아이템을 기점으로 정렬한다(위쪽 정렬) */
+   padding-top: 20px;
+   padding-right: 20px;
+   width: 220px;
+   font-weight: 700;
+}
+
+.required {
+   padding: 5px 10px;
+   font-size: 12px;
+   line-height: 1;
+   background-color: #7fb2a1;
+   border-radius: 10px;
+}
+
+input,
+textarea {
+   display: block;
+   padding: 20px;
+   flex: 1; /* 여백을 좁히도록 flex 아이템의 폭을 지정 */
+   background-color: #e5e5e5;
+   border: 2px solid #5b8f8f;
+   border-radius: 10px;
+}
+
+textarea {
+   height: 200px;
+}

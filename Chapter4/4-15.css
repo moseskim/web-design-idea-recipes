@@ -1,0 +1,4 @@
+.image {
+   display: grid; /* 자식 요소를 grid 아이템으로 지정 */
+   place-items: center; /* 중앙 정렬 */
+}

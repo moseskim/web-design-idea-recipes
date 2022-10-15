@@ -1,0 +1,16 @@
+.wrap {
+   display: flex; /* 가로 배열 */
+   justify-content: space-between; /* 좌우 양쪽 정렬 */
+}
+
+.item {
+   padding: 20px;
+   width: 32%;
+   background-color: #d6d6d6;
+   border-radius: 10px;
+}
+
+img {
+   width: 100%;
+   border-radius: 10px;
+}

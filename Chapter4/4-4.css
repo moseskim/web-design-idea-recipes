@@ -1,0 +1,43 @@
+.wrap {
+   display: flex; /* 가로 배열 */
+   justify-content: space-between; /* 좌우 양쪽 정렬 */
+   align-items: center; /* 상하 중앙 정렬 */
+   width: 1000px; /* 헤더 가로 폭 */
+}
+
+.logo {
+   width: 200px; /* 로고 가로 폭 */
+}
+
+.logo img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+ul {
+   display: flex; /* 가로 배열 */
+   justify-content: flex-end; /* Flex 아이템을 끝으로 붙임 */
+   flex: 1; /* 빈 공간을 좁히는 것처럼 내비게이션을 구현 */
+   list-style: none;
+}
+
+li:not(:last-child) { /* 가장 마지막 li 외에 지정 */
+   margin-right: 50px;
+}
+
+li a {
+   display: flex;
+   flex-direction: column; /* Flex 아이템을 세로로 배열 */
+   color: #111;
+   font-size: 28px;
+   font-weight: 700;
+   text-align: center;
+   text-decoration: none;
+   line-height: 1.6;
+}
+
+li a span {
+   color: #5b8f8f;
+   font-size: 13px;
+}
