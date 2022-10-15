@@ -1,0 +1,21 @@
+.pic {
+   position: absolute; /* 의사 요소 기준 */
+}
+.pic::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: calc(100% + 20px); /* 왼쪽과 오른쪽의 대각선 프레임 절반값 x 2를 더하는 계산식 */
+   height: calc(100% + 20px); /* 위와 아래의 대각선 프레임 절반값 x 2를 더하는 계산식 */
+   border-image-source: repeating-linear-gradient(
+      45deg, /* 45도 회전 */
+      #ea987e 0px, #ea987a 2px, /* 색을 입힌 선 */
+      rgba(0 0 0 / 0) 2px, rgba(0 0 0 / 0) 7px /* 여백(투명) 부분 */
+   );
+   border-image-slice: 20; /* border 네 변의 사용 범위를 지정 */
+   border-width: 20px; /* 테두리 폭 */
+   border-image-repeat: round; /* 타일 형태로 반복해서 표시 */
+   border-style: solid; /* 실선으로 표현 */
+}
