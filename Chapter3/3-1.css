@@ -1,0 +1,35 @@
+a {
+   display: block;
+   position: absolute; /* 대각선 배경 기준 */
+   color: #333;
+   text-decoration: none;
+}
+
+a span {
+   display: flex;
+   justify-content: center; /* 좌우 중앙 정렬 */
+   align-items: center; /* 상하 중앙 정렬 */
+   position: relative; /* z-index 적용을 위해 필요 */
+   padding: 30px 10px;
+   width: 260px;
+   font-size: 28px;
+   font-weight: 700;
+   background-color: #90be70;
+   z-index: 2; /* 겹침 순서 지정 */
+}
+
+a::before { /* 대각선 배경 지정 */
+   content: '';
+   position: absolute;
+   bottom: -5px; /* 기준 아래쪽에서 -5px 이동 */
+   right: -5px; /* 기준 오른쪽에서 -5px 이동 */
+   width: 100%;
+   height: 100%;
+   background-image: repeating-linear-gradient( /* 대각선을 선형 그라데이션으로 표현 */
+      -45deg, /* 선형 그라데이션을 -45° 회전시킴 */
+      #2b550e 0px, #2b550e 2px, /* 색을 입힌 선을 표현 */
+      rgba(0 0 0 / 0) 0%, rgba(0 0 0 / 0) 50% /* 여백(투명) 부분을 표현 */
+   );
+   background-size: 8px 8px; /* background-image를 표현할 크기를 지정 */
+   z-index: 1; /* 겹침 순서 지정 */
+}
